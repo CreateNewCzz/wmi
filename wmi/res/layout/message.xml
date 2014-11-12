@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <ScrollView
+                android:id="@+id/msg_scroll"
+                android:layout_width="match_parent"
+                android:layout_height="240dp" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/msg_bgimg"
+                        android:layout_width="match_parent"
+                        android:layout_height="320dp"
+                        android:scaleType="fitXY" />
+
+                    <EditText
+                        android:id="@+id/msg_content"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint="匿名发表秘密"
+                        android:maxLength="240"
+                        android:padding="50dp"
+                        android:textColor="#ff000000"
+                        android:textColorHint="#ffffffff"
+                        android:textCursorDrawable="@null" />
+                </FrameLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/msg_linear01"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/msg_relative02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/msg_scroll"
+                    android:background="#ffffffff" >
+
+                    <ImageView
+                        android:id="@+id/msg_fun"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="3dp"
+                        android:src="@drawable/ic_publish_operation_bar_photo" />
+
+                    <ImageView
+                        android:id="@+id/msg_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_margin="3dp"
+                        android:src="@drawable/ic_publish_operation_bar_option" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/msg_text01"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/msg_relative02"
+                    android:background="#ffe6e6e6" />
+
+                <FrameLayout
+                    android:id="@+id/msg_layoutadd"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_below="@id/msg_text01"
+                    android:background="#ffffffff"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/msg_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="发表秘密安全吗？" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

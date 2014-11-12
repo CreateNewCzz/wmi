@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ImageView
+            android:id="@+id/show_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:id="@+id/show_relative"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/show_flag1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" >
+
+                    <TextView
+                        android:id="@+id/show_relationShip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="10dp"
+                        android:text="北京"
+                        android:textColor="#ff000000"
+                        android:textSize="20dp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3" >
+
+                    <ImageView
+                        android:id="@+id/show_action_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_action_more" />
+
+                    <TextView
+                        android:id="@+id/show_report"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/show_action_more"
+                        android:text="10" />
+
+                    <ImageView
+                        android:id="@+id/show_comment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toLeftOf="@id/show_report"
+                        android:src="@drawable/ic_card_comment" />
+
+                    <CheckBox
+                        android:id="@+id/check_zan"
+                        style="@style/MyCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/show_comment"
+                        android:checked="false"
+                        android:focusable="false"
+                        android:text="34" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/show_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/show_flag1"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:maxLength="170"
+                android:padding="20dp"
+                android:text="快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快快"
+                android:textColor="#ff000000"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

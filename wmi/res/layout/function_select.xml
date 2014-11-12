@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:stretchColumns="0,1,2,3" >
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/fun_camera"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_publish_bottom_pan_camera" />
+
+            <ImageView
+                android:id="@+id/fun_album"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_publish_bottom_pan_album" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_publish_bottom_pan_search" />
+
+            <ImageView
+                android:id="@+id/fun_moulds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_publish_bottom_pan_template" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp" >
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="拍照" />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="相册" />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="网络图库" />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="默认模板" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp" >
+
+            <ImageView>
+            </ImageView>
+
+            <ImageView>
+            </ImageView>
+
+            <ImageView>
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_publish_bottom_pan_effect_enabled" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="5dp" >
+
+            <TextView />
+
+            <TextView />
+
+            <TextView />
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:text="调整效果" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="15dp" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:stretchColumns="0,1,2,3,4" >
+
+        <TableRow>
+
+            <ImageView
+                android:id="@+id/mouldvp_img01"
+                android:src="@drawable/s_1" />
+
+            <ImageView
+                android:id="@+id/mouldvp_img02"
+                android:src="@drawable/s_2" />
+
+            <ImageView
+                android:id="@+id/mouldvp_img03"
+                android:src="@drawable/s_3" />
+
+            <ImageView
+                android:id="@+id/mouldvp_img04"
+                android:src="@drawable/s_4" />
+
+            <ImageView
+                android:id="@+id/mouldvp_img05"
+                android:src="@drawable/s_5" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp" >
+
+            <ImageView
+                android:id="@+id/mouldvp_img06"
+                android:src="@drawable/s_6" />
+
+            <ImageView
+                android:id="@+id/mouldvp_img07"
+                android:src="@drawable/s_7" />
+
+            <ImageView
+                android:id="@+id/mouldvp_img08"
+                android:src="@drawable/s_8" />
+
+            <ImageView
+                android:id="@+id/mouldvp_img09"
+                android:src="@drawable/s_9" />
+
+            <ImageView
+                android:id="@+id/mouldvp_img10"
+                android:src="@drawable/s_10" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
